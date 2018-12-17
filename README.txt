@@ -15,7 +15,7 @@ output de algun comando como los siguientes:
     $ find /<carpetaObejtivo> -type f > ./flst
     $ ls /<carpetaObjetivo> > ./flst
 
-o  Script checHash.sh
+o  Script checkHash.sh
 
 Este script toma como entrada la salida del anterior, y comprueba uno por uno
 que no haya habido modificaciones en el contenido y en los permisos de cada uno
@@ -25,4 +25,11 @@ pantalla.
 
 Ninguno de los dos scripts necesita opciones especiales para su ejecución. Con
 lanzarlos será suficiente.
+
+o To Do
+Mejorar el script checkHash haciendo uso de diff, se puede usar un directorio
+temporal al que se lo podría hacer clear tras cada ejecución.
+    - más escrituras en disco
+    - menos memoria
+    ...
 
